@@ -1,12 +1,12 @@
 package models
 
 type Item struct {
-	sku       string
-	unitPrice int
-	offerRule *OfferRule
+	SKU       string
+	UnitPrice int
+	OfferRule *OfferRule
 }
 
 type OfferRule struct {
-	noOfItems   int
-	offerAmount int
+	NoOfItems   int
+	OfferAmount int
 }
