@@ -1,4 +1,4 @@
-package main
+package supermarket_test
 
 func main() {
 	print("Hello World")

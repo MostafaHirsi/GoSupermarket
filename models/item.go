@@ -1,4 +1,4 @@
-package main
+package models
 
 type Item struct {
 	sku       string
