@@ -32,7 +32,7 @@ func TestCheckoutTotalPriceWith0TotalPrice(t *testing.T) {
 	actualTotalPrice, err := checkout.GetTotalPrice()
 	if err != nil {
 		t.Errorf("Error: %v", err)
-	} else if actualTotalPrice != expectedTotalPrice {
+	} else if actualTotalPrice != &expectedTotalPrice {
 		t.Errorf("Actual: %d, Expected %d", actualTotalPrice, expectedTotalPrice)
 	}
 }
@@ -44,7 +44,7 @@ func TestCheckoutTotalPriceWith100TotalPrice(t *testing.T) {
 	actualTotalPrice, err := checkout.GetTotalPrice()
 	if err != nil {
 		t.Errorf("Error: %v", err)
-	} else if actualTotalPrice != expectedTotalPrice {
+	} else if actualTotalPrice != &expectedTotalPrice {
 		t.Errorf("Actual: %d, Expected %d", actualTotalPrice, expectedTotalPrice)
 	}
 }

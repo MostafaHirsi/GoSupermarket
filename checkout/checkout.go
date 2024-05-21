@@ -15,6 +15,6 @@ func (checkout Checkout) Scan(sku string) error {
 	return errors.New("not yet implemented")
 }
 
-func (checkout Checkout) GetTotalPrice() (int, error) {
-	return 0, errors.New("not yet implemented")
+func (checkout Checkout) GetTotalPrice() (*int, error) {
+	return nil, errors.New("not yet implemented")
 }
